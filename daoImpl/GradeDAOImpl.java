@@ -29,8 +29,11 @@ File.separator);
 			BufferedWriter writer = new BufferedWriter(new FileWriter(file,true));
 			BufferedReader reader = new BufferedReader(new FileReader(file));
 			
-			writer.write(String.format("%s,%s,%s,%s,%s,%s,%s", param.getHakbun(),param.getName(),param.getKor(),
-					param.getMath(),param.getSociety(),param.getEng(),param.getSsn()));
+			writer.write(String.format("이름: %s,주민번호: %s, 학번: %s, 국어:  %s, 수학: %s,영어: %s,사회: %s,총점: %s,평균: %s",
+//					param.getName(),param.getSsn(),param.getHakbun(),
+					param.getKor(),param.getMath(),param.getEng(),param.getSociety(),param.getTotal(),param.getAve()));
+			
+			//getName,getHakbun,getKor,getMath,getSociety,getEng,getSsn,
 			//writer.write();
 			writer.newLine();
 			writer.flush();

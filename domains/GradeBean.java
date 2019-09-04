@@ -5,19 +5,8 @@ import java.io.Serializable;
 public class GradeBean implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
-	private String ssn, name, kor, eng, math, society ,hakbun ;
-	public String getSsn() {
-		return ssn;
-	}
-	public void setSsn(String ssn) {
-		this.ssn = ssn;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+	private String  kor, eng, math, society ;
+	private int  total , ave;
 	public String getKor() {
 		return kor;
 	}
@@ -42,20 +31,28 @@ public class GradeBean implements Serializable {
 	public void setSociety(String society) {
 		this.society = society;
 	}
-	public String getHakbun() {
-		return hakbun;
+	public int getTotal() {
+		return total;
 	}
-	public void setHakbun(String hakbun) {
-		this.hakbun = hakbun;
+	public void setTotal(int total) {
+		this.total = total;
+	}
+	public int getAve() {
+		return ave;
+	}
+	public void setAve(int ave) {
+		this.ave = ave;
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 	@Override
 	public String toString() {
-		return "GradeBean [ssn=" + ssn + ", name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math
-				+ ", society=" + society + ", hakbun=" + hakbun + "]";
+		return "GradeBean [kor=" + kor + ", eng=" + eng + ", math=" + math + ", society=" + society + ", total=" + total
+				+ ", ave=" + ave + "]";
 	}
+	
+	
 
 
 	

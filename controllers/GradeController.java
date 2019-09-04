@@ -31,9 +31,9 @@ public class GradeController extends HttpServlet {
 		param.setEng(eng);
 		param.setKor(kor);
 		param.setMath(math);
-		param.setName(name);
+//		param.setName(name);
 		param.setSociety(society);
-		param.setSsn(ssn);
+//		param.setSsn(ssn);
 		service.createGrade(param);
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
